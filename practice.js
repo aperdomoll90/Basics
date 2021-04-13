@@ -1,36 +1,34 @@
 const morseCode = {
-    "A": ".-",
-    "B": "-...",
-    "C": "-.-.",
-    "D": "-..",
-    "E": ".",
-    "F": "..-.",
-    "G": "--.",
-    "H": "....",
-    "I": "..",
-    "J": ".---",
-    "K": "-.-",
-    "L": ".-..",
-    "M": "--",
-    "N": "-.",
-    "O": "---",
-    "P": ".--.",
-    "Q": "--.-",
-    "R": ".-.",
-    "S": "...",
-    "T": "-",
-    "U": "..-",
-    "W": ".--",
-    "X": "-..-",
-    "Y": "-.--",
-    "Z": "--.."
- }
-const toBeTrans = 'sos';
- const translation = (words) => {
-     return words.toUpperCase().split('').map(letter => {
-       return morseCode[letter] ? morseCode[letter] : letter
-
- }).join(' ')
+  A: '.-',
+  B: '-...',
+  C: '-.-.',
+  D: '-..',
+  E: '.',
+  F: '..-.',
+  G: '--.',
+  H: '....',
+  I: '..',
+  J: '.---',
+  K: '-.-',
+  L: '.-..',
+  M: '--',
+  N: '-.',
+  O: '---',
+  P: '.--.',
+  Q: '--.-',
+  R: '.-.',
+  S: '...',
+  T: '-',
+  U: '..-',
+  W: '.--',
+  X: '-..-',
+  Y: '-.--',
+  Z: '--..',
 };
-
-     console.log(translation(toBeTrans))
+const toBeTrans = 'nikki';
+const fullTranslation = (text) => {
+    return text.toUpperCase().split('').map(letter => {
+       return morseCode[letter] ? morseCode[letter] : letter
+    }).join(' ')
+}
+console.log(fullTranslation(toBeTrans))
