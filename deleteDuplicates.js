@@ -1,4 +1,4 @@
-const shoppingList = [, 'banana', 'sausage', 'eggs', 'burger', 'apple'];
+const shoppingList = [, 'banana', 'sausage', 'eggs', 'burger', 'apple','apple','sausage'];
 const cart = ['apple', 'banana', 'eggs'];
 
 
@@ -20,6 +20,11 @@ const cart = ['apple', 'banana', 'eggs'];
 
 const duplicates = shoppingList.filter(item => {
    return  !cart.includes(item)})
+   // returns a new array with the no duplicates
+
+   const sameDuplicates = shoppingList.filter(item => {
+    return  !shoppingList.includes(item)})
+    //attempt to solve duplicates in same array but need to not erase itself
 
 
 // const deleteDuplicate = duplicates.forEach(duplicate =>{
@@ -27,6 +32,7 @@ const duplicates = shoppingList.filter(item => {
     
 
 console.log(duplicates) 
+console.log(sameDuplicates) 
 // console.log(deleteDuplicate) 
 
 // const deleteDuplicate = function(shopMap,cartMap){
