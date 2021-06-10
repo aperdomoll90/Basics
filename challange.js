@@ -1,3 +1,5 @@
+ // function to return books above certain rating
+
  const books = [
  {
  bookName:'todd in the tree',
@@ -11,10 +13,12 @@
  rating: 2.0
  }
  ]
-// 
-// function returnTopBooks(book){
-//     return topBooks = books.filter(book => book.rating >= 4.5 )}
 
+// with a array method
+function returnTopBooks(book){
+    return topBooks = books.filter(book => book.rating >= 4.5 )}
+
+// with a for loop
 
 function returnTopBooks(books){
     let topBooks =[]
